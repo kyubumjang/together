@@ -5,12 +5,7 @@ interface AfterLoginLayoutProps {
 }
 
 const AfterLoginLayout = ({ children }: AfterLoginLayoutProps) => {
-  return (
-    <div>
-      AFTER LOGIN LAYOUT
-      {children}
-    </div>
-  );
+  return <div className="flex w-full h-full">{children}</div>;
 };
 
 export default AfterLoginLayout;
