@@ -1,7 +1,8 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
-// import { AUTH_KEYS } from "@/constants/keyFactory";
 import { fetchGitHubUser } from "@/api/auth";
+
+// import { AUTH_KEYS } from "@/constants/keyFactory";
 
 const useSignIn = () => {
   const queryClient = useQueryClient();

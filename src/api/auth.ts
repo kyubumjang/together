@@ -1,5 +1,5 @@
-const refreshUser = async () => {
+const fetchGitHubUser = async () => {
   // TODO: 수정 필요
 };
 
-export { refreshUser };
+export { fetchGitHubUser };
