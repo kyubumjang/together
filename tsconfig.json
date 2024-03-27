@@ -20,7 +20,7 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"],
-      "types/*": ["./types/together-type/*"]
+      "types/*": ["types/together-type/*"]
     },
     "forceConsistentCasingInFileNames": true
   },

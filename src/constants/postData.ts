@@ -12,10 +12,6 @@ export const postData: IListPagination<IPostWithWriter> = {
       description:
         "글의 주제는 프런트엔드, 백엔드 개발과 관련된 전문성, 의사소통, 성장을 중심으로 작성합니다. 실제로 궁금하고 관심을 가지고 있는 부분에 대해 작성합니다.",
       category: "COMMON_DEV",
-      id: 0,
-      createdAt: new Date(),
-      deletedAt: new Date(),
-      updatedAt: new Date(),
       Writer: {
         id: 0,
         createdAt: new Date(),
@@ -35,10 +31,6 @@ export const postData: IListPagination<IPostWithWriter> = {
       description:
         "최근 프로젝트 진행하면서 프론트, 백엔드에서 공통적으로 쓰이는 타입을 어떻게 관리할 지 고민하였습니다. 고민 끝에 저희는 Submodule을 사용해 공통 타입을 관리하기로 결정하였습니다.",
       category: "COMMON_DEV",
-      id: 1,
-      createdAt: new Date(),
-      deletedAt: new Date(),
-      updatedAt: new Date(),
       Writer: {
         id: 1,
         createdAt: new Date(),
@@ -59,10 +51,7 @@ export const postData: IListPagination<IPostWithWriter> = {
       description:
         "오랜시간 삽질했던 부분, 같은 실수 반복하지 않기 위해 적습니다.",
       category: "COMMON_DEV",
-      id: 3,
-      createdAt: new Date(),
-      deletedAt: new Date(),
-      updatedAt: new Date(),
+
       Writer: {
         id: 3,
         createdAt: new Date(),
@@ -82,10 +71,6 @@ export const postData: IListPagination<IPostWithWriter> = {
       description:
         "✔ 어떠한 프로그램을 다운 받는 과정을 굉장히 간단하게 만들기 위해서",
       category: "COMMON_DEV",
-      id: 4,
-      createdAt: new Date(),
-      deletedAt: new Date(),
-      updatedAt: new Date(),
       Writer: {
         id: 4,
         createdAt: new Date(),
@@ -105,10 +90,6 @@ export const postData: IListPagination<IPostWithWriter> = {
       description:
         "user별로 특정 시간동안 특정 횟수를 초과한 경우 해당 유저의 요청을 제한하는 rate limit 역할을 하는 서버를 개발해야했습니다.",
       category: "COMMON_DEV",
-      id: 5,
-      createdAt: new Date(),
-      deletedAt: new Date(),
-      updatedAt: new Date(),
       Writer: {
         id: 5,
         createdAt: new Date(),
@@ -127,10 +108,6 @@ export const postData: IListPagination<IPostWithWriter> = {
       link: "https://velog.io/@jkb2221/%EB%B6%88%EA%B0%80%EB%8A%A5%EC%9D%84-%EA%B0%80%EB%8A%A5%EC%9C%BC%EB%A1%9C-%EC%83%81%EC%83%81%EC%9D%84-%ED%98%84%EC%8B%A4%EB%A1%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%9A%B4%EC%98%81%EB%B0%A9%EC%B9%A8",
       description: "RDBMS의 한계와 어려움",
       category: "COMMON_DEV",
-      id: 6,
-      createdAt: new Date(),
-      deletedAt: new Date(),
-      updatedAt: new Date(),
       Writer: {
         id: 6,
         createdAt: new Date(),
