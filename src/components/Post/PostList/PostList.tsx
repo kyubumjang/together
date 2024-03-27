@@ -1,7 +1,7 @@
 "use client";
 
-import { IListPagination } from "../../../../together-type/common";
-import { IPostWithWriter } from "../../../../together-type/post/common";
+import { IListPagination } from "@/types/together-type/common";
+import { IPostWithWriter } from "@/types/together-type/post/common";
 import PostX from "./PostX/PostX";
 import PostY from "./PostY/PostY";
 

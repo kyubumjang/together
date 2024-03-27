@@ -1,7 +1,7 @@
 "use client";
 
 import { GithubProfileX } from "@/components/Profile";
-import { IPostWithWriter } from "../../../../../together-type/post/common";
+import { IPostWithWriter } from "@/types/together-type/post/common";
 import Image from "next/image";
 import Link from "next/link";
 import { PostInfo } from "../../PostInfo";

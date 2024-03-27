@@ -7,7 +7,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "flowbite-react";
-import { PostCategory } from "../../../../together-type/post/common";
+import { PostCategory } from "@/types/together-type/post/common";
 import { PostFilterButton } from "./PostFilterButton";
 
 const PostTagFilter = () => {

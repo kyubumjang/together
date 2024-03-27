@@ -2,7 +2,7 @@
 
 import { Avatar, Button, Tabs } from "flowbite-react";
 
-import { IUser } from "../../../../together-type/user/common";
+import { IUser } from "@/types/together-type/user/common";
 import Image from "next/image";
 import Link from "next/link";
 import { PostList } from "@/components/Post";
@@ -11,6 +11,10 @@ import { useState } from "react";
 
 const User = () => {
   const [userInfo, setUserInfo] = useState<IUser>({
+    id: 1,
+    createdAt: new Date(),
+    deletedAt: new Date(),
+    updatedAt: new Date(),
     githubId: 0,
     avatarUrl: "https://avatars.githubusercontent.com/u/33307948?v=4",
     githubUrl: "https://github.com/kyubumjang",

@@ -1,5 +1,5 @@
 import { Avatar } from "flowbite-react";
-import { IUser } from "../../../../together-type/user/common";
+import { IUser } from "@/types/together-type/user/common";
 import Link from "next/link";
 
 interface GithubProfileXProps

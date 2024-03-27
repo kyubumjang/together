@@ -3,7 +3,7 @@
 import { Badge, Button, Dropdown, TextInput } from "flowbite-react";
 import { ChangeEvent, useState } from "react";
 
-import { PostCategory } from "../../../../../together-type/post/common";
+import { PostCategory } from "@/types/together-type/post/common";
 
 type keyOfPostCategory = keyof typeof PostCategory;
 
