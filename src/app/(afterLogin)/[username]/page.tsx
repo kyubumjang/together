@@ -12,6 +12,10 @@ import { useState } from "react";
 const User = () => {
   const [userInfo, setUserInfo] = useState<IUser>({
     githubId: 0,
+    id: 0,
+    createdAt: new Date(),
+    deletedAt: new Date(),
+    updatedAt: new Date(),
     avatarUrl: "https://avatars.githubusercontent.com/u/33307948?v=4",
     githubUrl: "https://github.com/kyubumjang",
     nickname: "kyubumjang",
