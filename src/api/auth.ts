@@ -1,5 +1,14 @@
-const fetchGitHubUser = async () => {
-  // TODO: 수정 필요
-};
+import { SignIn, SignInDto } from "@/types";
 
-export { fetchGitHubUser };
+import { UpdateToken } from "@/types/together-type/auth";
+import apiRequest from ".";
+
+const BASE_PATH = "/auth";
+
+const signIn = ({ params }: { params: SignInDto }) =>
+  apiRequest.get<SignIn["Response"]>(`${BASE_PATH}/github`, { params });
+
+const updateRefreshToken = () =>
+  apiRequest.patch<{ data: UpdateToken["Response"] }>(`${BASE_PATH}/refresh`);
+
+export { signIn, updateRefreshToken };

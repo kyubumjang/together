@@ -1,6 +1,5 @@
-import { PostList, PostTagFilter } from "@/components/Post";
+import { PostList, PostSortFilter, PostTagFilter } from "@/components/Post";
 
-import { PostSortFilter } from "@/components/Post/PostSortFilter";
 import { postData } from "@/constants/postData";
 
 const BeforeLoginPage = () => {

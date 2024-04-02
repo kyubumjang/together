@@ -1,13 +1,17 @@
 "use client";
 
+import {
+  IPostWithWriterLogin,
+  IPostWithWriterNonLogin,
+} from "@/types/together-type/post/common";
+
 import { GithubProfileX } from "@/components/Profile";
-import { IPostWithWriter } from "@/types/together-type/post/common";
 import Image from "next/image";
 import Link from "next/link";
 import { PostInfo } from "../../PostInfo";
 
 interface PostXProps {
-  post: IPostWithWriter;
+  post: IPostWithWriterLogin | IPostWithWriterNonLogin;
   isGithubProfile?: boolean;
   height?: number;
 }

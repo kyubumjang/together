@@ -1,7 +1,13 @@
-import { IListPagination } from "@/types/together-type/common";
-import { IPostWithWriter } from "@/types/together-type/post/common";
+import {
+  IPostWithWriterLogin,
+  IPostWithWriterNonLogin,
+} from "@/types/together-type/post/common";
 
-export const postData: IListPagination<IPostWithWriter> = {
+import { IListPagination } from "@/types/together-type/common";
+
+export const postData: IListPagination<
+  IPostWithWriterLogin | IPostWithWriterNonLogin
+> = {
   totalCount: 6,
   list: [
     {
@@ -16,6 +22,7 @@ export const postData: IListPagination<IPostWithWriter> = {
       createdAt: new Date(),
       deletedAt: new Date(),
       updatedAt: new Date(),
+      views: 0,
       Writer: {
         id: 0,
         createdAt: new Date(),
@@ -39,6 +46,7 @@ export const postData: IListPagination<IPostWithWriter> = {
       createdAt: new Date(),
       deletedAt: new Date(),
       updatedAt: new Date(),
+      views: 0,
       Writer: {
         id: 1,
         createdAt: new Date(),
@@ -63,6 +71,7 @@ export const postData: IListPagination<IPostWithWriter> = {
       createdAt: new Date(),
       deletedAt: new Date(),
       updatedAt: new Date(),
+      views: 0,
       Writer: {
         id: 3,
         createdAt: new Date(),
@@ -86,6 +95,7 @@ export const postData: IListPagination<IPostWithWriter> = {
       createdAt: new Date(),
       deletedAt: new Date(),
       updatedAt: new Date(),
+      views: 0,
       Writer: {
         id: 4,
         createdAt: new Date(),
@@ -109,6 +119,7 @@ export const postData: IListPagination<IPostWithWriter> = {
       createdAt: new Date(),
       deletedAt: new Date(),
       updatedAt: new Date(),
+      views: 0,
       Writer: {
         id: 5,
         createdAt: new Date(),
@@ -131,6 +142,7 @@ export const postData: IListPagination<IPostWithWriter> = {
       createdAt: new Date(),
       deletedAt: new Date(),
       updatedAt: new Date(),
+      views: 0,
       Writer: {
         id: 6,
         createdAt: new Date(),

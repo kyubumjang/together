@@ -1,10 +1,13 @@
 import axios, { AxiosRequestConfig } from "axios";
 
-const baseURL = `${process.env.NEXT_PUBLIC_API_ENDPOINT}/api`;
+const baseURL = `/api`;
 
 const baseInstance = axios.create({
   baseURL: baseURL,
   withCredentials: true,
+  headers: {
+    "Access-Control-Allow-Origin": `${process.env.NEXT_PUBLIC_ACCESS_CONTROL_ALLOW_ORIGIN_URL}`,
+  },
 });
 
 export interface DefaultResponse {

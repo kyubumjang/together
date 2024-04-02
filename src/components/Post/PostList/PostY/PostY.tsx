@@ -1,12 +1,16 @@
 "use client";
 
-import { IPostWithWriter } from "@/types/together-type/post/common";
+import {
+  IPostWithWriterLogin,
+  IPostWithWriterNonLogin,
+} from "@/types/together-type/post/common";
+
 import Image from "next/image";
 import Link from "next/link";
 import { PostInfo } from "../../PostInfo";
 
 interface PostProps {
-  post: IPostWithWriter;
+  post: IPostWithWriterLogin | IPostWithWriterNonLogin;
 }
 
 const PostY = (props: PostProps) => {

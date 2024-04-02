@@ -1,13 +1,19 @@
 "use client";
 
+import {
+  IPostWithWriterLogin,
+  IPostWithWriterNonLogin,
+} from "@/types/together-type/post/common";
+
 import { IListPagination } from "@/types/together-type/common";
-import { IPostWithWriter } from "@/types/together-type/post/common";
 import PostX from "./PostX/PostX";
 import PostY from "./PostY/PostY";
 
 interface PostListProps {
   postType: "x" | "y";
-  postData: IListPagination<IPostWithWriter>;
+  postData:
+    | IListPagination<IPostWithWriterLogin>
+    | IListPagination<IPostWithWriterNonLogin>;
   isGithubProfile?: boolean;
   isDivider?: boolean;
   height?: number;
@@ -15,7 +21,6 @@ interface PostListProps {
 
 const PostList = (props: PostListProps) => {
   const { postType, postData, isGithubProfile, isDivider, height } = props;
-
   // const gridItemMaxWidth = 500;
   // const gridItemMinWidth = 310;
   // const gridItemsPerRow = 3;

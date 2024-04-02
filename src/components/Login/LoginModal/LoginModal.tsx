@@ -19,7 +19,7 @@ const LoginModal = () => {
 
   const handleLogin = () => {
     window.location.assign(
-      `${process.env.NEXT_PUBLIC_GITHUB_AUTHORIZE_URL}${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}${process.env.NEXT_PUBLIC_GITHUB_REDIRECT_URI}${process.env.NEXT_PUBLIC_API_ENDPOINT}${process.env.NEXT_PUBLIC_GITHUB_REDIRECT_API_URL}`,
+      `${process.env.NEXT_PUBLIC_GITHUB_AUTHORIZE_URL}${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}${process.env.NEXT_PUBLIC_GITHUB_REDIRECT_URI}${process.env.NEXT_PUBLIC_GITHUB_API_REDIRECT_URI_CALLBACK}`,
     );
   };
 

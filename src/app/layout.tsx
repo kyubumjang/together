@@ -1,10 +1,10 @@
 import "./globals.css";
 
-import { Header, LeftSideBar } from "@/components";
-
 import type { Metadata } from "next";
 import { Providers } from "@/components/Providers";
+import { ReactNode } from "react";
 import { Roboto } from "next/font/google";
+import { RootLayoutWrapper } from "@/components";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
@@ -16,19 +16,15 @@ export const metadata: Metadata = {
 const RootLayout = ({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) => {
   return (
     <html lang="en">
       <body className={roboto.className}>
         <main className="w-screen h-screen">
-          <Header />
-          <div className="flex flex-row w-full h-[calc(100%-56px)]">
-            <LeftSideBar />
-            <div className="flex left-16 w-[calc(100%-64px)] h-full">
-              <Providers>{children}</Providers>
-            </div>
-          </div>
+          <Providers>
+            <RootLayoutWrapper>{children}</RootLayoutWrapper>
+          </Providers>
         </main>
       </body>
     </html>

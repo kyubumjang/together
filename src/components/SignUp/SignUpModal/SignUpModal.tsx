@@ -1,6 +1,6 @@
 "use client";
 
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 import { AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
@@ -17,8 +17,9 @@ const SignUpModal = (props: SignUpProps) => {
 
   const handleSignUp = () => {
     // TODO: access token 있으면 이미 가입된 회원입니다. alert
-    window.open(`${process.env.NEXT_PUBLIC_GITHUB_AUTHORIZE_URL}${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}
-${process.env.NEXT_PUBLIC_GITHUB_REDIRECT_URI}${process.env.NEXT_PUBLIC_API_ENDPOINT}${process.env.NEXT_PUBLIC_GITHUB_REDIRECT_API_URL}`);
+    window.location
+      .assign(`${process.env.NEXT_PUBLIC_GITHUB_AUTHORIZE_URL}${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}
+${process.env.NEXT_PUBLIC_GITHUB_REDIRECT_URI}${process.env.NEXT_PUBLIC_GITHUB_API_REDIRECT_URI_CALLBACK}`);
   };
 
   const onCloseSignUpModal = () => {
