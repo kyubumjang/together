@@ -1,15 +1,9 @@
-import { PostList, PostSortFilter, PostTagFilter } from "@/components/Post";
+"use client";
 
-import { postData } from "@/constants/postData";
+import { Home } from "@/components";
 
 const BeforeLoginPage = () => {
-  return (
-    <div className="flex flex-col w-full h-full items-start justify-start gap-2 p-2">
-      <PostTagFilter />
-      <PostSortFilter />
-      <PostList postType="y" postData={postData} isGithubProfile={false} />
-    </div>
-  );
+  return <Home />;
 };
 
 export default BeforeLoginPage;

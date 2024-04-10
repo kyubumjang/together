@@ -5,6 +5,7 @@ import { ReactNode, useState } from "react";
 import { RecoilEnv, RecoilRoot } from "recoil";
 
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { ToastContextProvider } from "../ToastContextProvider";
 
 type Props = {
   children: ReactNode;
@@ -28,7 +29,9 @@ const Providers = ({ children }: Props) => {
 
   return (
     <QueryClientProvider client={client}>
-      <RecoilRoot>{children}</RecoilRoot>
+      <RecoilRoot>
+        <ToastContextProvider>{children}</ToastContextProvider>
+      </RecoilRoot>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );

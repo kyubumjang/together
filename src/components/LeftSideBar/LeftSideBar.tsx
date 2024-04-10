@@ -11,7 +11,7 @@ const LeftSideBar = () => {
   const { accessToken } = useRecoilValue(authState);
 
   return (
-    <div className="flex flex-col w-16 h-full min-w-16 top-14 bottom-0 left-0 box-border">
+    <div className="flex flex-col fixed bg-white w-16 h-full min-w-16 top-14 bottom-0 left-0 box-border max-[640px]:hidden">
       {/* TODO: 컴포넌트로 분리: icon, 글자 */}
       {/* TODO: 각 네비게이션일 때 다른 icon으로 조건부 렌더링 처리 */}
       <Link href={accessToken ? "/home" : `/`}>

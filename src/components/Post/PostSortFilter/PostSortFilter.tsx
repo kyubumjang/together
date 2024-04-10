@@ -14,7 +14,32 @@ const PostSortFilter = () => {
   const { accessToken } = useRecoilValue(authState);
 
   return (
-    <div className="flex flex-row w-full align-center justify-end gap-4 pr-8">
+    <div className="flex flex-row bg-white p-2 w-full align-center justify-end gap-4 pr-8 max-[640px]:pr-3 max-[640px]:mt-14">
+      {/* FIXME: BUTTON GROUP 컴포넌트 사용할 것 */}
+      <Button
+        pill={true}
+        size="xs"
+        color="gray"
+        onClick={handleSortByUploadDay}
+      >
+        추천순
+      </Button>
+      <Button
+        pill={true}
+        size="xs"
+        color="gray"
+        onClick={handleSortByLikeCount}
+      >
+        최신순
+      </Button>
+      <Button
+        pill={true}
+        size="xs"
+        color="gray"
+        onClick={handleSortByClickCount}
+      >
+        조회수순
+      </Button>
       {accessToken && (
         <Link href="/compose/blog">
           <Button
@@ -27,31 +52,6 @@ const PostSortFilter = () => {
           </Button>
         </Link>
       )}
-      {/* FIXME: BUTTON GROUP 컴포넌트 사용할 것 */}
-      <Button
-        pill={true}
-        size="xs"
-        color="gray"
-        onClick={handleSortByUploadDay}
-      >
-        최신순
-      </Button>
-      <Button
-        pill={true}
-        size="xs"
-        color="gray"
-        onClick={handleSortByLikeCount}
-      >
-        추천순
-      </Button>
-      <Button
-        pill={true}
-        size="xs"
-        color="gray"
-        onClick={handleSortByClickCount}
-      >
-        조회수순
-      </Button>
     </div>
   );
 };

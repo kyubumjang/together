@@ -21,7 +21,7 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <main className="w-screen h-screen">
+        <main className="w-screen h-screen overflow-x-hidden">
           <Providers>
             <RootLayoutWrapper>{children}</RootLayoutWrapper>
           </Providers>

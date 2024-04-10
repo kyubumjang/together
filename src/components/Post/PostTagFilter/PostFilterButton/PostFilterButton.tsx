@@ -13,7 +13,7 @@ const PostFilterButton = (props: PostFilterButtonProps) => {
 
   return (
     <Button pill={true} size="xs" color="gray" onClick={handlePostFilter}>
-      {filterName}
+      <span className="whitespace-nowrap">{filterName}</span>
     </Button>
   );
 };

@@ -3,10 +3,12 @@ const nextConfig = {
   reactStrictMode: false,
   images: {
     remotePatterns: [
-      { hostname: "images.unsplash.com" },
-      { hostname: "plus.unsplash.com" },
-      { hostname: "velog.velcdn.com" },
-      { hostname: "avatars.githubusercontent.com" },
+      {
+        hostname: "localhost",
+      },
+      {
+        hostname: "*",
+      },
     ],
   },
   async rewrites() {

@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from "axios";
 
 const baseURL = `/api`;
 
-const baseInstance = axios.create({
+export const baseInstance = axios.create({
   baseURL: baseURL,
   withCredentials: true,
   headers: {
